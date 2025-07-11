@@ -1,7 +1,6 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15%2B-blue?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.x-06b6d4?logo=tailwindcss)](https://tailwindcss.com/)
-[![Nextra](https://img.shields.io/badge/Nextra-4.x-06b6d4?logo=nextra)](https://nextra.site/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -12,11 +11,11 @@
 
 Puedes ver una versión desplegada del proyecto en el siguiente enlace:
 
-- [Demo](http...)
+- [Demo](https://wordle-clone-chi-sandy.vercel.app/)
 
 Y si deseas consultar esta misma guía paso a paso como parte del sitio, está incluida directamente dentro de la documentación:
 
-- [Guía completa](http...)
+- **Pendiente**
 
 # Cómo descargar e instalar el proyecto
 
@@ -25,8 +24,8 @@ Si quieres utilizar esta base de documentación en tu propio entorno o como punt
 ### Clona el repositorio
 
 ```bash
-git clone https://github.com/mauriciogc/nextjs-v15-doc.git
-cd nextjs-v15-doc
+git clone https://github.com/mauriciogc/wordle-clone.git
+cd wordle-clone
 ```
 
 ### Instala las dependencias
