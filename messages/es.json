@@ -1,0 +1,41 @@
+{
+  "AppPage": {
+    "title": "Wordle",
+    "language": "Español"
+  },
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "Inglés",
+    "label": "Idioma"
+  },
+  "HowToPlay": {
+    "title": "Cómo Jugar",
+    "description": "Adivina la <strong>palabra oculta de 5 letras</strong> en 6 intentos. Cada intento debe ser una palabra válida. Después de cada intento, el color de las fichas cambiará para mostrar lo cerca que estabas de la palabra.",
+    "correct": "<strong>Verde</strong>: La letra es correcta y está en la posición correcta. ",
+    "present": "<strong>Amarillo</strong>: La letra está en la palabra pero en la posición incorrecta.",
+    "absent": "<strong>Gris</strong>: La letra no está en la palabra.",
+    "useKeyboard": "Utiliza el teclado o haz clic en las teclas virtuales para introducir adivinanzas. Pulsa <kbd>Enter</kbd> para enviar.",
+    "invalidWord": "No puedes enviar palabras que no estén en el diccionario.",
+    "backGame": "← Volver al juego"
+  },
+  "GameEnd": {
+    "winTitle": "¡Ganaste!",
+    "loseTitle": "Fin del juego",
+    "winMessages": [
+      "¡Correcto!",
+      "¡Bien hecho!",
+      "¡Lo lograste!",
+      "¡Palabra adivinada!",
+      "¡Victoria total!"
+    ],
+    "loseMessages": [
+      "Fallaste esta vez.",
+      "Se acabaron los intentos.",
+      "Te quedaste cerca.",
+      "No fue tu día.",
+      "Otra vez será."
+    ],
+    "wordWas": "La palabra era: {word}",
+    "playAgain": "Jugar de nuevo"
+  }
+}

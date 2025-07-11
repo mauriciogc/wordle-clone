@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --overlay: rgba(0, 0, 0, 0.8);
+
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+
+  --correct: #00a63e;
+  --present: #d08700;
+  --absent: #4a5565;
+  --active: #8ec5ff;
+  --button: #086ad3;
+  --secondary: #adadad;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --overlay: rgba(32, 32, 32, 0.8);
+
+    --correct: #00c950;
+    --present: #f0b100;
+    --absent: #4a5565;
+    --active: #51a2ff;
+    --secondary: #7c777f;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-overlay: var(--overlay);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--font-sans);
+  --color-correct: var(--correct);
+  --color-present: var(--present);
+  --color-absent: var(--absent);
+  --color-active: var(--active);
+  --color-button: var(--button);
+  --color-secondary: var(--secondary);
+}
+
+@layer utilities {
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translateX(-1px);
+    }
+    20%,
+    80% {
+      transform: translateX(2px);
+    }
+    30%,
+    70% {
+      transform: translateX(-4px);
+    }
+    40%,
+    60% {
+      transform: translateX(4px);
+    }
+    50% {
+      transform: translateX(-4px);
+    }
+  }
+
+  .animate-shake {
+    animation: shake 0.4s ease;
+  }
+}
+
+.noscroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Components */
+@layer components {
+  .cell {
+    @apply w-14 h-14 rounded-xl flex items-center justify-center text-xl font-bold;
+  }
+
+  .state {
+    @apply border transition-all duration-200;
+  }
+
+  .state-correct {
+    @apply bg-(--color-correct)/10 border-(--color-correct)/70 text-(--color-correct);
+  }
+
+  .state-present {
+    @apply bg-(--color-present)/10 border-(--color-present)/70 text-(--color-present);
+  }
+
+  .state-absent {
+    @apply bg-(--color-absent)/10 border-(--color-absent)/70 text-(--color-absent);
+  }
+
+  .state-active {
+    @apply bg-(--color-active)/70 border-(--color-active) animate-pulse;
+  }
+
+  .state-keyPress {
+    @apply bg-(--color-active)/70 border-(--color-active);
+  }
+
+  .state-default {
+    @apply bg-white/0 border-gray-500/70 text-gray-900 dark:text-gray-200;
+  }
+
+  .btn-ico {
+    @apply flex items-center hover:bg-(--color-foreground)/10 border border-gray-200 dark:border-neutral-800 rounded-full p-3 transition-all duration-200 cursor-pointer;
+  }
+}

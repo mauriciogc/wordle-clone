@@ -1,0 +1,41 @@
+{
+  "AppPage": {
+    "title": "Wordle",
+    "language": "English"
+  },
+  "LocaleSwitcher": {
+    "es": "Spanish",
+    "en": "English",
+    "label": "Language"
+  },
+  "HowToPlay": {
+    "title": "How to Play",
+    "description": "Guess the <strong>hidden 5-letter word</strong> in 6 tries. Each guess must be a valid word. After each guess, the color of the tiles will change to show how close your guess was to the word.",
+    "correct": "<strong>Green</strong>: Letter is correct and in the correct position.",
+    "present": "<strong>Yellow</strong>: Letter is in the word but in the wrong position.",
+    "absent": "<strong>Gray</strong>: Letter is not in the word at all.",
+    "useKeyboard": "Use your keyboard or click the virtual keys to input guesses. Press <kbd>Enter</kbd> to submit.",
+    "invalidWord": "You cannot submit words that are not in the dictionary.",
+    "backGame": "← Back to Game"
+  },
+  "GameEnd": {
+    "winTitle": "You won!",
+    "loseTitle": "Game Over",
+    "winMessages": [
+      "Correct!",
+      "Well done!",
+      "You did it!",
+      "Word guessed!",
+      "Total win!"
+    ],
+    "loseMessages": [
+      "You failed this time.",
+      "No more tries.",
+      "You came close.",
+      "It wasn't your day.",
+      "Another time it will be."
+    ],
+    "wordWas": "The word was: {word}",
+    "playAgain": "Play again."
+  }
+}
