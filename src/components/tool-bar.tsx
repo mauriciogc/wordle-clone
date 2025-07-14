@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import LocaleSwitcherSelect from '@/components/locale-switcher-select';
-import { BookAlert, RefreshCcw } from 'lucide-react';
+import { BookAlert, RefreshCcw, FolderGit2 } from 'lucide-react';
 
 type ToolBarProps = {
   hasGuesses: boolean;
@@ -24,6 +24,14 @@ export default function ToolBar({
       ) : (
         <LocaleSwitcherSelect />
       )}
+      <a
+        href="https://github.com/mauriciogc/wordle-clone"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-ico"
+      >
+        <FolderGit2 />
+      </a>
     </div>
   );
 }
